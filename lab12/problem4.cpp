@@ -1,0 +1,1 @@
+//loop to go through array and then loop that prints the stars
