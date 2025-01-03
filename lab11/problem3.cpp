@@ -8,3 +8,12 @@ int twoLeftDigitSum(int num){
         return num / 10 + num % 10; 
     return twoLeftDigitSum(num / 10);
 }
+
+int main(){
+
+  cout << twoLeftDigitSum(567982) << endl; // prints 11 
+  cout << twoLeftDigitSum(107982) << endl; // prints 1
+  cout << twoLeftDigitSum(7) << endl; // prints 7 
+
+  return 0; 
+} 

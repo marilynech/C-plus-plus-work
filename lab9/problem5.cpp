@@ -59,5 +59,7 @@ int main (){
     cout<<"Probability of tails given 10000 tosses = "<<tails / 10000.0 <<endl; 
 
 
+    return 0;
+
 }
 

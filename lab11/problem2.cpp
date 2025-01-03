@@ -9,6 +9,12 @@ int thirdDigit(int num){
     return thirdDigit(num / 10); 
 }
 
-int main(){
-    return 0; 
-}
+int main(){ 
+
+  cout << thirdDigit(347) << " "; 
+  cout << thirdDigit(2048) << " "; 
+  cout << thirdDigit(560125) << endl; 
+  // This code should print: 
+  // 7 4 0 
+  return 0; 
+} 

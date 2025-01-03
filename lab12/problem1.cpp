@@ -4,28 +4,21 @@ using namespace std;
 
 int main(){
 //all arrays start from zero bc of the index 
-   // int arr[10]; 
-    //int size = sizeof(arr) / sizeof(arr[0]); 
-    //cout<< size;
-    //stores numbers 1 through 10 start at0 
-    //for(int i = 0; i < size; i++){
-      //  cout<<arr[i]<<endl;
-      //enchanced for loop
-
-      //for(int i : arr)
-        //cout<< i <<endl;  
+//enchanced for loop
+    //for(int i : arr)
+    //cout<< i <<endl;  
     int size = 10;
     int arr[size];
 
+    cout<<"Enter 10 integers: "<<endl; 
+    
     for(int i = 0; i < size; i++){
-        cout<<"Enter 10 integers: "; 
         cin>>arr[i]; 
     } 
 
-    for(int i : arr){
-        cout<< i << "\t"; 
-    }
-
+    //for(int i : arr){
+       // cout<< i << " "; 
+    //}
     //add all nums in array and divide by 10 or the size 
     double sum = 0;
     for(int i : arr){
@@ -33,16 +26,20 @@ int main(){
     }
 
     double average = sum / size; 
-    cout<<"Average of the integers in array"<<average<<endl; 
+    cout<<"Average of the integers in array: "<<average<<endl; 
 
-    double sum = 0, count = 0; 
+    sum = 0; 
+    int count = 0; 
     for(int i : arr){
-        if(i > average){
+        if(i >= average){
             sum+=i;
             count++;
         }
     }
 
-    double b = sum / count; 
-    cout<<b<<endl; 
+    double b = (count > 0) ? (sum / count) : 0; 
+    cout<<"Average of the integers greater than or equal to the overall average of "<<average<<
+    " is: "<<b<<endl; 
+
+    return 0; 
 }
